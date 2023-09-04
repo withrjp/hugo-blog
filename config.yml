@@ -1,0 +1,27 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Ackerman
+theme: PaperMod
+
+# PaperMod
+# search page
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+params:
+  homeInfoParams:
+    Title: Hi there wave
+    Content: Can be Info, links, about...
+
+  socialIcons: # 社交平台小图标, 支持列表: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-icons/
+    - name: github
+      url: "https://github.com/adityatelange/hugo-PaperMod"
+    - name: email
+      url: "mailto:withrjp@gmail.com"
+    - name: qq
+      url: "934132280@qq.com"
+   
+  comments: true
