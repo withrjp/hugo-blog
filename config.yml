@@ -3,7 +3,12 @@ languageCode: en-us
 title: Ackerman
 theme: PaperMod
 
-# PaperMod
+# enable support of raw html, ref: https://tzhwang.com/2021/08/28/enable-raw-html-in-hugo/
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 # search page
 outputs:
   home:
@@ -12,10 +17,14 @@ outputs:
     - JSON # is necessary
 
 params:
+  ShowToc: true
+  TocOpen: true
+  comments: true
+  ShowCodeCopyButtons: true
+  ShowReadingTime: true
   homeInfoParams:
     Title: Hi there wave
     Content: Can be Info, links, about...
-
   socialIcons: # 社交平台小图标, 支持列表: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-icons/
     - name: github
       url: "https://github.com/adityatelange/hugo-PaperMod"
@@ -23,5 +32,3 @@ params:
       url: "mailto:withrjp@gmail.com"
     - name: qq
       url: "934132280@qq.com"
-   
-  comments: true
