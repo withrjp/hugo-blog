@@ -42,5 +42,5 @@ jobs:
         with:
           config: ${{ secrets.KUBECONFIG }}
           version: v1.23.3
-          command: set image container=registry.rjp.pub/blog:${{ github.sha }}
+          command: set image deployment/blog blog=registry.rjp.pub/blog:${{ github.sha }} -n blog
 
