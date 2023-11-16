@@ -9,6 +9,7 @@ draft: false
 ## 部署 Minio
 
 Minio 单节点部署到 k8s 集群：`kubectl apply -f minio.yaml`
+
 minio.yaml：
 
 ```yaml
